@@ -1,0 +1,1174 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #111;
+}
+
+#logo-home{
+    color: #FFF;
+    width: 25%;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+}
+
+.nav-links a:hover {
+    color: #00f2ff;
+}
+
+.cart-profile{
+    display: flex;
+    width: 25%;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+#cart{
+    width: 30px;
+    height: 30px;
+    background-image: url("Photos/Cart.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#cart:hover {
+  background-image: url("Photos/HoverLogo.png");
+}
+
+section {
+  scroll-margin-top: 60px; /* Adjust to match navbar height */
+}
+/*HERO SECTION*/
+
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: url("https://r2-bucket.flowith.net/f/002c054e4d54be9a/futuristic_tech_hero_background_index_0.jpeg") center/cover;
+}
+
+.hero h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.hero p{
+    font-size: 20px;
+}
+
+.hero span {
+    color: #00f2ff;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #00f2ff;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/*Product*/
+
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+}
+
+.card h3,
+.card p{
+    color: gray;
+}
+
+.card:hover{
+    background: #00f2ff;
+
+    .card p, h3{
+        color: #fff;
+    } 
+    .card h3, p{
+        color: #FFF;
+    }
+    cursor: pointer;
+
+}
+
+/*SMARTPHONE*/
+
+.Smartphone,
+.Laptop,
+.Computer,
+.Smartdev{
+    padding: 50px;
+    text-align: center;
+    display: none;
+}
+
+.Smartphone{
+    padding: 50px;
+    text-align: center;
+    display: block;
+}
+
+.Smartphone-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-phone{
+    background: #1a1a1a;
+    padding: 20px;
+    height: 470px;
+}
+
+/*LAOPTOP*/
+
+.Laptop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-laptop{
+    background: #1a1a1a;
+    padding: 20px;
+    height: 470px;
+}
+
+/*COMPUTER*/
+
+.Computer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-pc{
+    background: #1a1a1a;
+    padding: 20px;
+    height: 470px;
+}
+
+/*SMART DEVICES*/
+
+.Smartdev-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-dev{
+    background: #1a1a1a;
+    padding: 20px;
+    height: 470px;
+}
+
+#S26{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/SamsungS26.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#S26:hover {
+  background-image: url("Photos/S26Hover.jpg");
+}
+
+#S25{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/SamsungS25.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#S25:hover {
+  background-image: url("Photos/SamsungS25Hover.jpg");
+}
+
+#Ip17{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Iphone17.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Ip17:hover {
+  background-image: url("Photos/IP17Hover.jpg");
+}
+
+#Ip16{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Iphone16.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Ip16:hover {
+  background-image: url("Photos/Iphone16Hover.jpg");
+}
+
+#ROG9{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ROGPhone9.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ROG9:hover {
+  background-image: url("Photos/ROGPhone9Hover.jpg");
+}
+
+#ROG8{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ROGPhone8.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ROG8:hover {
+  background-image: url("Photos/ROGPhone8Hover.jpg");
+}
+
+#X15{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Xiaomi15.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#X15:hover {
+  background-image: url("Photos/Xiaomi15Hover.jpg");
+}
+
+#X14{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Xiaomi14.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#X14:hover {
+  background-image: url("Photos/Xiaomi14Hover.jpg");
+}
+
+/*Laptops*/
+
+#X1{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ThinkpadX1.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#X1:hover {
+  background-image: url("Photos/ThinkpadX1Hover.jpg");
+}
+
+#M5{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/MacBookM5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#M5:hover {
+  background-image: url("Photos/MacBookM5Hover.jpg");
+}
+
+#XPS14{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/DellXPS14.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#XPS14:hover {
+  background-image: url("Photos/DellXPS14Hover.jpg");
+}
+
+#E14{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ThinkPadE14.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#E14:hover {
+  background-image: url("Photos/ThinkPadE14Hover.jpg");
+}
+
+#M14{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/MacBookP14.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#M14:hover {
+  background-image: url("Photos/MacBookP14Hover.jpg");
+}
+
+#P5{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/AsusExpertBookP5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#P5:hover {
+  background-image: url("Photos/AsusExpertBookP5Hover.jpg");
+}
+
+#TB16{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ThinkBook16.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#TB16:hover {
+  background-image: url("Photos/ThinkBook16Hover.jpg");
+}
+
+#HP845{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/HPEliteBookG11.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#HP845:hover {
+  background-image: url("Photos/HPEliteBookG11Hover.jpg");
+}
+
+/*COMPUTER*/
+
+#R7{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/AMDR79800.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R7:hover {
+  background-image: url("Photos/AMDR79800Hover.jpg");
+}
+
+#R5{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/AMDR57600.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R5:hover {
+  background-image: url("Photos/AMDR57600Hover.jpg");
+}
+
+#R9{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/AMDR99950.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R9:hover {
+  background-image: url("Photos/AMDR99950Hover.jpg");
+}
+
+#I7{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Intel7265K.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#I7:hover {
+  background-image: url("Photos/Intel7265KHover.jpg");
+}
+
+/*GPU*/
+
+#R5090{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/RTX5090.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R5090:hover {
+  background-image: url("Photos/RTX5090Hover.jpg");
+}
+
+#R4090{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/RTX4090.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R4090:hover {
+  background-image: url("Photos/RTX4090Hover.jpg");
+}
+
+#R5080{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/RTX5080.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R5080:hover {
+  background-image: url("Photos/RTX5080Hover.jpg");
+}
+
+#RX9070{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/RX9070XT.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#RX9070:hover {
+  background-image: url("Photos/RX9070XTHover.jpg");
+}
+
+/*RAM*/
+
+#Z5{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/TridentZ5.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Z5:hover {
+  background-image: url("Photos/TridentZ5Hover.jpg");
+}
+
+#Fury{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/KingstonFury.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Fury:hover {
+  background-image: url("Photos/KingstonFuryHover.jpg");
+}
+
+#TF{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/TForceVulcan.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#TF:hover {
+  background-image: url("Photos/TForceVulcanHover.jpg");
+}
+
+#CV{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CorsairVengeance.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#CV:hover {
+  background-image: url("Photos/CorsairVengeanceHover.jpg");
+}
+
+/*SSD*/
+
+#S990{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Samsung990.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#S990:hover {
+  background-image: url("Photos/Samsung990Hover.jpg");
+}
+
+#MP700{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CorsairMP700.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#MP700:hover {
+  background-image: url("Photos/CorsairMP700Hover.jpg");
+}
+
+#SN7100{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/SandiskWDSN7100.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#SN7100:hover {
+  background-image: url("Photos/SandiskWDSN7100Hover.jpg");
+}
+
+#P3{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CrucialP3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#P3:hover {
+  background-image: url("Photos/CrucialP3Hover.jpg");
+}
+
+/*PSU*/
+
+#RM750e{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CorsairRM750e.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#RM750e:hover {
+  background-image: url("Photos/CorsairRM750eHover.jpg");
+}
+
+#R3{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/EnermaxRevolutionIII.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#R3:hover {
+  background-image: url("Photos/EnermaxRevolutionIIIHover.jpg");
+}
+
+#CX550{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CorsairCX550.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#CX550:hover {
+  background-image: url("Photos/CorsairCX550Hover.jpg");
+}
+
+#HX1500i{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CorsairHX1500i.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#HX1500i:hover {
+  background-image: url("Photos/CorsairHX1500iHover.jpg");
+}
+
+/*Heatsink*/
+
+#E2{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/SpireThermaxEclipseII.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#E2:hover {
+  background-image: url("Photos/SpireThermaxEclipseIIHover.jpg");
+}
+
+#TPC812{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/CoolerMasterTPC812.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#TPC812:hover {
+  background-image: url("Photos/CoolerMasterTPC812Hover.jpg");
+}
+
+#T120{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/TuniqTower120.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#T120:hover {
+  background-image: url("Photos/TuniqTower120Hover.jpg");
+}
+
+#SD1283{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/XigmatekDarkKnightSD1283.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#SD1283:hover {
+  background-image: url("Photos/XigmatekDarkKnightSD1283Hover.jpg");
+}
+
+/*MB*/
+
+#X870E{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/GigabyteX870EAorusMaster.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#X870E:hover {
+  background-image: url("Photos/GigabyteX870EAorusMasterHover.jpg");
+}
+
+#B650{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ASUSTUFGamingB650.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#B650:hover {
+  background-image: url("Photos/ASUSTUFGamingB650Hover.jpg");
+}
+
+#B850A{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/AsusROGStrixB850A.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#B850A:hover {
+  background-image: url("Photos/AsusROGStrixB850AHover.jpg");
+}
+
+#B850M{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/ASRockB850M.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#B850M:hover {
+  background-image: url("Photos/ASRockB850MHover.jpg");
+}
+
+/*SMART DEVICES*/
+
+#ES8{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/EchoShow8.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ES8:hover {
+  background-image: url("Photos/EchoShow8Hover.jpg");
+}
+
+#T4{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/Thermostat.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#T4:hover {
+  background-image: url("Photos/ThermostatHover.jpg");
+}
+
+#E3{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/EufyCam3.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#E3:hover {
+  background-image: url("Photos/Eufycam3Hover.jpg");
+}
+
+#A19{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/LifxA19.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#A19:hover {
+  background-image: url("Photos/LifxA19Hover.jpg");
+}
+
+#Kasa{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/KasaWiFiPlug.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Kasa:hover {
+  background-image: url("Photos/KasaWiFiPlugHover.jpg");
+}
+
+#Ooma{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/OomaSensors.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Ooma:hover {
+  background-image: url("Photos/OomaSensorsHover.jpg");
+}
+
+#LV200S{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/LevoitVital200S.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#LV200S:hover {
+  background-image: url("Photos/LevoitVital200SHover.jpg");
+}
+
+#S10R{
+    width: 100%;
+    height: 350px;
+    background-image: url("Photos/RoborockSaros10R.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#S10R:hover {
+  background-image: url("Photos/RoborockSaros10RHover.jpg");
+}
+
+/* ABOUT */
+.about {
+    padding: 50px;
+    background-color: #1a1a1a;
+    height: 700px;
+}
+
+.About-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.About-text span{
+    color: #00f2ff;
+}
+#mission{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.About-text p{
+    font-family: sans-serif;
+}
+
+/* CONTACT */
+.contact {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    height: 700px;
+}
+
+.divider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.infoall{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.infoall span{
+    color: #00f2ff;
+}
+
+#journey{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Info{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    gap: 30px;
+}
+
+.Social{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+}
+
+.form-container {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      width: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #aaa;
+}   
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #eee;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00eaff;
+    box-shadow: 0 0 5px rgba(0, 234, 255, 0.4);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #00eaff;
+    color: #000;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #00d0dc;
+}
+
+.inline{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 50px;
+    background: #111;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.logoft{
+    font-weight: bold;
+    width: 25%;
+}
+
+.foot{
+    width: 50%;
+}
+
+.Buttonup{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.Buttonup a{
+    background-color: #0a0a0a;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+
+}
